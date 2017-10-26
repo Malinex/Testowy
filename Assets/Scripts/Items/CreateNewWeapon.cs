@@ -5,11 +5,12 @@ using UnityEngine;
 public class CreateNewWeapon : MonoBehaviour
 {
 	private BaseWeapon newWeapon;
-	public void CreateWeapon()
+	private string[] itemDes = new string[4] { "A new good wapon", "Warrior's wapon", "Mage's wapon", "Hunter's wapon" };
+	private void CreateWeapon()
 	{
 		newWeapon = new BaseWeapon();
 		newWeapon.ItemName = "W" + Random.Range(1, 101);
-		newWeapon.ItemDescription = "New Weapon";
+		newWeapon.ItemDescription = itemDes[Random.Range(0, itemDes.Length)];
 		//Name and Description
 		newWeapon.ItemID = Random.Range(1, 101);
 		//ID

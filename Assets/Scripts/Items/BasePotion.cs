@@ -8,7 +8,7 @@ public class BasePotion : BaseStatItem
 	{
 		HEALTH,
 		MANA,
-		STRENGHT,
+		STRENGTH,
 		INTELLECT,
 		AGILITY,
 		ENDURANCE,

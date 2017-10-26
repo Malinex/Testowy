@@ -8,16 +8,6 @@ public class TestGUI : MonoBehaviour
 	private BaseCharacterClass class2 = new BaseMageClass();
 	private BaseCharacterClass class3 = new BaseHunterClass();
 
-	void Start()
-	{
-		
-	}
-
-	void Update()
-	{
-		
-	}
-
 	void OnGUI ()
 	{
 		GUILayout.Label(class1.CharacterClassName);

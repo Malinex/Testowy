@@ -15,7 +15,7 @@ public class BaseScroll : BaseStatItem
 	private ScrollTypes scrollType;
 	private int spellEffectID;
 
-	public ScrollTypes WeaponType
+	public ScrollTypes ScrollType
 	{
 		get { return scrollType; }
 		set { scrollType = value; }
