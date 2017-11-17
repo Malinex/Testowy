@@ -18,15 +18,7 @@ public class BaseArmor : BaseStatItem
 	private ArmorTypes armorType;
 	private int spellEffectID;
 
-	public ArmorTypes ArmorType
-	{
-		get { return armorType; }
-		set { armorType = value; }
-	}
-	public int SpellEffectID
-	{
-		get { return spellEffectID; }
-		set { spellEffectID = value; }
-	}
+	public ArmorTypes ArmorType	{get { return armorType; }set { armorType = value; }}
+	public int SpellEffectID{get { return spellEffectID; }set { spellEffectID = value; }}
 
 }

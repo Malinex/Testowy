@@ -20,14 +20,15 @@ public class CreateNewPotion : MonoBehaviour
 	private void ChooseItemType()
 	{
 		int randomTemp = Random.Range(1, 9);
-		if (randomTemp == 1) { newPotion.PotionType = BasePotion.PotionTypes.HEALTH; }
+		newPotion.PotionType = (BasePotion.PotionTypes)randomTemp - 1;
+		/*if (randomTemp == 1) { newPotion.PotionType = BasePotion.PotionTypes.HEALTH; }
 		else if (randomTemp == 2) { newPotion.PotionType = BasePotion.PotionTypes.MANA; }
 		else if (randomTemp == 3) { newPotion.PotionType = BasePotion.PotionTypes.STRENGTH; }
 		else if (randomTemp == 4) { newPotion.PotionType = BasePotion.PotionTypes.INTELLECT; }
 		else if (randomTemp == 5) { newPotion.PotionType = BasePotion.PotionTypes.AGILITY; }
 		else if (randomTemp == 6) { newPotion.PotionType = BasePotion.PotionTypes.ENDURANCE; }
 		else if (randomTemp == 7) { newPotion.PotionType = BasePotion.PotionTypes.REJUVENATION; }
-		else if (randomTemp == 8) { newPotion.PotionType = BasePotion.PotionTypes.SPEED; }
+		else if (randomTemp == 8) { newPotion.PotionType = BasePotion.PotionTypes.SPEED; }*/
 	}
 	void Start()
 		//inicjalizacja

@@ -28,14 +28,15 @@ public class CreateNewArmor : MonoBehaviour
 	private void ChooseItemType()
 	{
 		int randomTemp = Random.Range(1, 9);
-		if (randomTemp == 1) { newArmor.ArmorType = BaseArmor.ArmorTypes.HEAD; }
+		newArmor.ArmorType = (BaseArmor.ArmorTypes)randomTemp - 1;
+		/*if (randomTemp == 1) { newArmor.ArmorType = BaseArmor.ArmorTypes.HEAD; }
 		else if (randomTemp == 2) { newArmor.ArmorType = BaseArmor.ArmorTypes.CHEST; }
 		else if (randomTemp == 3) { newArmor.ArmorType = BaseArmor.ArmorTypes.LEGS; }
 		else if (randomTemp == 4) { newArmor.ArmorType = BaseArmor.ArmorTypes.FEET; }
 		else if (randomTemp == 5) { newArmor.ArmorType = BaseArmor.ArmorTypes.SHOULDERS; }
 		else if (randomTemp == 6) { newArmor.ArmorType = BaseArmor.ArmorTypes.HANDS; }
 		else if (randomTemp == 7) { newArmor.ArmorType = BaseArmor.ArmorTypes.WRISTS; }
-		else if (randomTemp == 8) { newArmor.ArmorType = BaseArmor.ArmorTypes.MISC; }
+		else if (randomTemp == 8) { newArmor.ArmorType = BaseArmor.ArmorTypes.MISC; }*/
 	}
 	void Start()
 		//inicjalizacja

@@ -27,12 +27,14 @@ public class CreateNewWeapon : MonoBehaviour
 	private void ChooseWeaponType()
 	{
 		int randomTemp = Random.Range(1, 7);
-		if (randomTemp == 1) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.SWORD; }
+	
+		newWeapon.WeaponType = (BaseWeapon.WeaponTypes)randomTemp - 1;
+		/*if (randomTemp == 1) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.SWORD; }
 		else if (randomTemp == 2) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.SHIELD; }
 		else if (randomTemp == 3) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.STAFF; }
 		else if (randomTemp == 4) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.WAND; }
 		else if (randomTemp == 5) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.BOW; }
-		else if (randomTemp == 6) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.GUN; }
+		else if (randomTemp == 6) { newWeapon.WeaponType = BaseWeapon.WeaponTypes.GUN; }*/
 
 	}
 	void Start()

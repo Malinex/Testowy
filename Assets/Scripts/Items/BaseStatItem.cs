@@ -10,29 +10,10 @@ public class BaseStatItem : BaseItem
 	private int agility;
 	private int endurance;
 
-	public int Stamina
-	{
-		get { return stamina; }
-		set { stamina = value; }
-	}
-	public int Stength
-	{
-		get { return stength; }
-		set { stength = value; }
-	}
-	public int Intellect
-	{
-		get { return intellect; }
-		set { intellect = value; }
-	}
-	public int Agility
-	{
-		get { return agility; }
-		set { agility = value; }
-	}
-	public int Endurance
-	{
-		get { return endurance; }
-		set { endurance = value; }
-	}
+	public int Stamina { get { return stamina; } set { stamina = value; } }
+	public int Stength { get { return stength; } set { stength = value; } }
+	public int Intellect { get { return intellect; } set { intellect = value; } }
+	public int Agility { get { return agility; } set { agility = value; } }
+	public int Endurance { get { return endurance; } set { endurance = value; } }
+}
 }

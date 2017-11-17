@@ -21,11 +21,12 @@ public class CreateNewScroll : MonoBehaviour
 	private void ChooseItemType()
 	{
 		int randomTemp = Random.Range(1, 9);
-		if (randomTemp == 1) { newScroll.ScrollType = BaseScroll.ScrollTypes.STAMINA; }
+		newScroll.ScrollType = (BaseScroll.ScrollTypes)randomTemp - 1;
+		/*if (randomTemp == 1) { newScroll.ScrollType = BaseScroll.ScrollTypes.STAMINA; }
 		else if (randomTemp == 2) { newScroll.ScrollType = BaseScroll.ScrollTypes.PROTECTION; }
 		else if (randomTemp == 3) { newScroll.ScrollType = BaseScroll.ScrollTypes.STRENGTH; }
 		else if (randomTemp == 4) { newScroll.ScrollType = BaseScroll.ScrollTypes.INTELLECT; }
-		else if (randomTemp == 5) { newScroll.ScrollType = BaseScroll.ScrollTypes.AGILITY; }
+		else if (randomTemp == 5) { newScroll.ScrollType = BaseScroll.ScrollTypes.AGILITY; }*/
 	}
 	void Start()
 		//inicjalizacja
